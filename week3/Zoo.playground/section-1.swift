@@ -1,17 +1,23 @@
 class Zoo{
-    var Name : String
-    var Food : String
+    let n : String
+    let f : String
     
-    init(Name:String, Food:String){
-        self.Name = Name
-        self.Food = Food
+    var name:[String] = ["Tiger","Cat","Dog"]
+    var food:[String] = ["Beef","Fride","Peddeegee"]
     
-        
-        
+    
+    init(name:String, food:String){
+        self.n = name
+        self.f = food
     }
-    func add(Name:String,Food:String) -> [String:Int]{
-        var Name : Dictionary <String,Int> = ["Cat":1,"Birde":2,"Ant":3]
-        var Food : Dictionary <String,Int> = ["Fish":1,"Worm":2,"Leaf":3]
-        return name;,food
+    
+    func  Zooname (){
+        name += n
+        food += f
     }
+    
+    
 }
+
+let test = Zoo(name:"Ant",food:"Tree")
+test.Zooname()
